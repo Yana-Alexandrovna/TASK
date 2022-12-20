@@ -8,6 +8,7 @@ int count = - N;
 
 while (count <+ N)
  {      
-    Console.Write(count + ", ");
-    count ++;
+   Console.Write(count + ", ");
+   count ++;
  }
+
