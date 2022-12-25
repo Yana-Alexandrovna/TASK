@@ -6,6 +6,7 @@
 
 Console.WriteLine("Введите число ");
 int a = Convert.ToInt32(Console.ReadLine());
+a=-a;
 int b = a.ToString().Length;
 int c = 1;
 if ( b < 3)
