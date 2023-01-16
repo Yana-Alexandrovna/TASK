@@ -10,7 +10,13 @@ int Quantity(int numb)
 }
 
 Console.WriteLine("Введите число ");
-int q = Convert.ToInt32(Console.ReadLine());
-int quantity = Quantity(q);
-Console.WriteLine(quantity);
+string q = Console.ReadLine();
+ if (int.TryParse(q, out int qq))
+    {
+        int quantity = Quantity(qq);
+        Console.WriteLine(quantity);
+    }
+    else 
+Console.Write("Ошибка");
+
 

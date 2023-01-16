@@ -3,3 +3,11 @@
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 
 // 6, 1, 33 -> [6, 1, 33]
+
+int[] arr = new int[8];
+    for(int i = 0; i < arr.Length; i++)
+    {
+        arr[i] = new Random().Next(); // Рандомные
+        Console.Write(arr[i] + " ");
+    }
+  

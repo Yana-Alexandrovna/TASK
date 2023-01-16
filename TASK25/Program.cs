@@ -7,7 +7,7 @@
 int Square(int number1 , int number2 )
 {
     int sq = 1;
-    for(int i = 0; i < number2; i++)
+    for(int i = 0; i < number2; i++) // ЦИКЛ!
     {
      sq = sq * number1;
     }
@@ -15,9 +15,18 @@ int Square(int number1 , int number2 )
 }
 
 Console.Write("Введите первое число ");
-int A = Convert.ToInt32(Console.ReadLine());
+string A = Console.ReadLine();
 Console.Write("Введите второе число ");
-int B = Convert.ToInt32(Console.ReadLine());
-int square = Square(A , B);
-Console.WriteLine(square);
-
+string B = Console.ReadLine();
+if (int.TryParse(A, out int a))
+{
+    if (int.TryParse(B, out int b))
+    {
+        int square = Square(a , b);
+    Console.WriteLine(square);
+    }
+    else 
+Console.Write("Ошибка");
+}
+else 
+Console.Write("Ошибка");

@@ -14,9 +14,15 @@ int Sum(int number)
 }
 
 Console.WriteLine("Введите число А ");
-int A = Convert.ToInt32(Console.ReadLine());
-int sum = Sum(A);
-Console.WriteLine(sum);
+string A = Console.ReadLine();
+  if (int.TryParse(A, out int a))
+    {
+       int sum = Sum(a);
+       Console.WriteLine(sum); 
+    }
+    else 
+Console.Write("Ошибка");
+
 
 
 
