@@ -31,4 +31,3 @@ for (int i = 0; i < array.Length; i++)
 }
 
 Console.WriteLine($"Сумма отрицательных чисел = {sumNegative}, а сумма положительных числел {sumPositive}" );
-
