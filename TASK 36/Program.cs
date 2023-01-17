@@ -9,10 +9,11 @@ int[] FillArrayWithRandom(int[] array)
 {
     for(int i = 0; i < array.Length; i++)
     {
-        array[i] = new Random().Next(-10,10);
+        array[i] = new Random().Next(-10,10); //Сделала ограничение по диапазону, так легче проверить
     }
-    return array;
 }
+    return array;
+
 
 int[] array = new int [5];
 array = FillArrayWithRandom(array);
