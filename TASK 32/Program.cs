@@ -10,7 +10,9 @@ int[] FillArrayWithRandom(int[] array)
     return array;
 }
 
-int[] array = new int [5];
+Console.WriteLine("Введите размер массива: ");
+int l = Convert.ToInt32(Console.ReadLine());
+int[] array = new int [l];
 array = FillArrayWithRandom(array);
 Console.WriteLine("Ваш случайный массив: ");
 Console.WriteLine(string.Join(", ", array));
